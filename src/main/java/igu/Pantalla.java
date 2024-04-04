@@ -275,15 +275,16 @@ public class Pantalla extends javax.swing.JFrame {
 
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
 
-        String usuario=jTextField1.getText();
-        String password = new String(jPasswordField1.getPassword());
-        
+        String usuario = jTextField1.getText();
+        String password = jPasswordField1.getText();
+
         if ("alumno@ulp.edu.ar".equals(usuario) && "12345678".equals(password)) {
-            JOptionPane.showMessageDialog(this,"Bienvenido/a al sistema!!!");
-        }else{
-            JOptionPane.showMessageDialog(this,"Usuario y/o contraseña incorrectos");
+            JOptionPane.showMessageDialog(this, "Bienvenido/a al sistema!!!");
+        } else {
+            JOptionPane.showMessageDialog(this, "Usuario y/o contraseña incorrectos, intenta nuevamente.");
         }
-        jTextField1.setText(" ");
+        jTextField1.setText("");
+        jPasswordField1.setText("");
     }//GEN-LAST:event_btnVerificarActionPerformed
 
     private void btnVerificarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVerificarMouseEntered
