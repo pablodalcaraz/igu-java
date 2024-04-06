@@ -299,7 +299,19 @@ public class Pantalla extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jPasswordField1MouseClicked
 
+public static void main(String args[]) {
+        
 
+       
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                Pantalla pantalla=new Pantalla();
+                pantalla.setVisible (true);
+                pantalla.setLocationRelativeTo(null);
+                
+            }
+        });
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnVerificar;
     private javax.swing.JLabel jLabel1;
